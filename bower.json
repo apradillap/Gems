@@ -1,22 +1,22 @@
 {
-  "name": "reveal.js",
+  "name": "Gems",
   "version": "3.2.0",
   "main": [
     "js/reveal.js",
     "css/reveal.css"
   ],
-  "homepage": "http://lab.hakim.se/reveal-js/",
+  "homepage": "http://github.com/apradillap/gems.git",
   "license": "MIT",
-  "description": "The HTML Presentation Framework",
+  "description": "Object Orientation and Ruby",
   "authors": [
-    "Hakim El Hattab <hakim.elhattab@gmail.com>"
+    "Adrián Pradilla <adrianpradilla@gmail.com>"
   ],
   "dependencies": {
     "headjs": "~1.0.3"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/apradillap/gems.git"
   },
   "ignore": [
     "**/.*",
