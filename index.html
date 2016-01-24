@@ -78,6 +78,16 @@
 				</section>
 
 				<section>
+					<h2>Rubygems</h2>
+					<p>
+						Package manager for the Ruby programming language.
+					</p>
+					<aside class="notes">
+						RubyGems is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a "gem"), a tool designed to easily manage the installation of gems, and a server for distributing them. RubyGems was created around November 2003 and is now part of the standard library from Ruby version 1.9.
+					</aside>
+				</section>
+
+				<section>
 					<h2>Gems</h2>
 					<p>
 						<img src="./images/matz.png" alt="Mordor">
@@ -122,23 +132,52 @@
 					</section>
 				</section>
 
-                <section>
-					<h2>Pretty Code</h2>
+				<section>
+					<h2>Gem command</h2>
+					<p>
+						The gem command is used to install, build, download and upload Gem packages.
+					</p>
+				</section>
+
+                <section> 
+					<h2>Installation</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+                         gem install rails
+					</code></pre>
+				</section>
 
-    var nodes = document.querySelectorAll( selector );
+				<section> 
+					<h2>Uninstall</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+                         gem uninstall rails
+					</code></pre>
+				</section>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+				<section> 
+					<h2>Listing installed gems</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+                         gem list --local
+					</code></pre>
+				</section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
+				<section> 
+					<h2>Listing available gems</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+                         gem list --remote
+					</code></pre>
+				</section>
+
+				<section> 
+					<h2>Create RDoc documentation for all gems</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+                         gem rdoc --all
+					</code></pre>
+				</section>
+
+				<section> 
+					<h2>Search available gems</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+                         gem search rails --remote
 					</code></pre>
 				</section>
 
@@ -365,9 +404,7 @@ function linkify( selector ) {
 					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
 					<p>Press the <em>S</em> key to try it out.</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+
 				</section>
 
 				<section>
