@@ -91,6 +91,7 @@
 					<h2>Rubygems</h2>
 					<p>
 						Package manager for the Ruby programming language.
+						<img src="./images/rubygems.png" alt="Matz">
 					</p>
 					<aside class="notes">
 						RubyGems is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a "gem"), a tool designed to easily manage the installation of gems, and a server for distributing them. RubyGems was created around November 2003 and is now part of the standard library from Ruby version 1.9.
@@ -115,6 +116,13 @@
 					<h2>Errors</h2>
 					<p>
 						<img src="./images/errors.png" alt="Errors">
+					</p>
+				</section>
+
+				<section>
+					<h2>Conflicting dependencies</h2>
+					<p>
+						<img src="./images/conflict.png" alt="Errors">
 					</p>
 				</section>
 
@@ -232,6 +240,13 @@
 				</section>
 
 				<section> 
+					<h2>Update gems</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+                         gem update
+					</code></pre>
+				</section>
+
+				<section> 
 					<h2>Example 1: consul Gemfile</h2>
 					<pre><code class="hljs" data-trim contenteditable>
 source 'https://rubygems.org'
@@ -262,6 +277,42 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook', '~> 3.0.0'
 gem 'omniauth-google-oauth2', '~> 0.3.0'					</code></pre>
+				</section>
+
+								<section> 
+					<h2>Example 2: catarse Gemfile</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+source 'https://rubygems.org'
+
+ruby '2.2.3'
+
+gem 'rails', '~> 4.1.6'
+
+gem 'protected_attributes'
+gem 'rails-observers'
+gem 'rb-readline'
+
+gem 'sidekiq',  '~> 4.0.1'
+
+# Turns every field on a editable one
+gem "best_in_place", :git => "git://github.com/bernat/best_in_place", ref: "ee95961e639022e6aa528704b8cb4789596ea61b"
+
+# State machine for attributes on models
+gem 'state_machine', require: 'state_machine/core'
+gem 'statesman'
+
+# Database and data related
+gem 'pg', '0.17.1'
+gem 'dbhero', '>= 1.1.8'
+gem 'postgres-copy'
+gem 'pg_search'				</code></pre>
+				</section>
+
+				<section>
+					<h2>Bundler?</h2>
+					<p>
+						Next chapter
+					</p>
 				</section>
 
 				<section> 
@@ -332,17 +383,6 @@ https://github.com/sparklemotion/nokogiri
 						Try it out at <br />
 						<a href="http://guides.rubygems.org/make-your-own-gem/" target="_blank">http://guides.rubygems.org/make-your-own-gem/</a>
 					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
 				</section>
 
 				<section style="text-align: left;">
