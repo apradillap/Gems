@@ -1,18 +1,18 @@
 {
   "name": "reveal.js",
   "version": "1.0.0",
-  "description": "The HTML Presentation Framework",
+  "description": "Gems",
   "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
-  "main": "js/reveal.js",
+  "subdomain": "gems",
+  "main": "gems",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Adrián Pradilla",
+    "email": "adrianpradilla@gmail.com",
+    "web": "http://www.adrianpradilla.com"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,8 @@
     "node": "~4.1.1"
   },
   "dependencies": {
-    "express": "~4.13.3",
-    "grunt-cli": "^0.1.13",
+    "express": "^4.4.5",
+    "ws": "0.4.x",
     "mustache": "~2.2.1",
     "socket.io": "~1.3.7",
     "underscore": "~1.8.3"
@@ -43,3 +43,4 @@
   },
   "license": "MIT"
 }
+
